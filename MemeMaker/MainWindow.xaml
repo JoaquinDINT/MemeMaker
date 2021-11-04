@@ -128,7 +128,10 @@
                                   Path= IsChecked,
                                   Converter={StaticResource BorderConversor}}"
                     BorderThickness="5"
-                    >
+                    Height="{Binding ElementName=altoSlider,
+                                        Path=Value}"
+                    Width="{Binding ElementName=anchoSlider,
+                                        Path=Value}">
                 <Grid>
                     <Image Stretch="Fill"
                            Source="{Binding ElementName=imagenTextBox,
