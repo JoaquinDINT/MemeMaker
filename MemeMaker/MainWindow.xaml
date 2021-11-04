@@ -136,11 +136,7 @@
                     <Image Stretch="Fill"
                            Source="{Binding ElementName=imagenTextBox,
                                     Path= Text,
-                                    Converter={StaticResource ImagenConversor}}"
-                               Height="{Binding ElementName=altoSlider,
-                                        Path=Value}"
-                               Width="{Binding ElementName=anchoSlider,
-                                        Path=Value}"/>
+                                    Converter={StaticResource ImagenConversor}}"/>
                     
                     <TextBlock Style="{StaticResource textoMeme}"
                                VerticalAlignment="Top"
