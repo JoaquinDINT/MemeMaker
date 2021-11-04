@@ -66,6 +66,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Convertidores\CheckBoxABorderConverter.cs" />
+    <Compile Include="Convertidores\EnlaceAImagenConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -99,6 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="smile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\2560.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
