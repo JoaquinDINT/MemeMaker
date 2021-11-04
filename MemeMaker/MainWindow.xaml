@@ -127,17 +127,23 @@
             <Border BorderBrush="{Binding ElementName=bordeCheckBox,
                                   Path= IsChecked,
                                   Converter={StaticResource BorderConversor}}"
-                    Width="500"
-                    Height="500">
+                    BorderThickness="5"
+                    >
                 <Grid>
                     <Image Stretch="Fill"
                            Source="{Binding ElementName=imagenTextBox,
                                     Path= Text,
-                                    Converter={StaticResource ImagenConversor}}"/>
+                                    Converter={StaticResource ImagenConversor}}"
+                               Height="{Binding ElementName=altoSlider,
+                                        Path=Value}"
+                               Width="{Binding ElementName=anchoSlider,
+                                        Path=Value}"/>
+                    
                     <TextBlock Style="{StaticResource textoMeme}"
                                VerticalAlignment="Top"
                                Text="{Binding ElementName=superiorTextBox, 
-                                      Path=Text}"/>
+                                      Path=Text}"
+/>
                     <TextBlock Style="{StaticResource textoMeme}"
                                VerticalAlignment="Bottom"
                                Text="{Binding ElementName=inferiorTextBox, 
